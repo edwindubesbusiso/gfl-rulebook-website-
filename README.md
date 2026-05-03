@@ -1,5 +1,8 @@
-gfl-rulebook-website-
-A website that acts as a rule book for the GFL a football league
+JW's Golden Football League — Official Rule Book
+
+A clean, fully static multi-page website serving as the official rule book for the **JW's Golden Football League (GFL)**. Built with pure HTML and CSS — no frameworks, no dependencies, no build tools required.
+
+---
 
 ---
 
