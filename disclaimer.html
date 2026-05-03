@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disclaimer — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html" class="active">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">07</div>
+  <div>
+    <div class="page-label">Legal</div>
+    <div class="page-title">Disclaimer &amp; Liability</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert-box">
+    <p class="alert-text">
+      Participation in the JW's Golden Football League (GFL) is entirely at your own risk.
+      While the GFL takes all reasonable precautions to ensure a safe environment, football
+      is a physical sport that carries an inherent risk of injury. By registering and
+      participating, you acknowledge and accept this risk.
+    </p>
+    <p class="alert-text">
+      The GFL, its organizers, volunteers, managers, and venue providers shall not be held
+      liable for any injury, loss, or damage to person or property, whether sustained during
+      match play, training, or while on the premises. This includes, but is not limited to,
+      sprains, fractures, concussions, or any other physical ailment, as well as loss or
+      damage to personal belongings and vehicles.
+    </p>
+    <p class="alert-highlight">
+      ✦ Your participation confirms that you have read, understood, and agree to abide by
+      all the rules, expectations, and disclaimers outlined in this rule book.
+    </p>
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">What This Covers</p>
+
+  <div class="rule-block">
+    🏃 <strong>During Match Play:</strong> Any injury sustained while playing in an official GFL fixture, including fouls, collisions, or accidents on the field of play.
+  </div>
+  <div class="rule-block">
+    🏋️ <strong>During Training:</strong> Any injury sustained during warm-up, cool-down, or any pre/post-match activity conducted on the venue premises.
+  </div>
+  <div class="rule-block">
+    🚗 <strong>Personal Belongings &amp; Vehicles:</strong> Loss, theft, or damage to any personal item including vehicles, phones, wallets, or other valuables brought to the venue.
+  </div>
+  <div class="rule-block warn">
+    ⚠️ <strong>Venue Premises:</strong> Any incident occurring on or around the venue, including the car park and surrounding areas, falls outside the liability of the GFL and its organizers.
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">Your Agreement</p>
+
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.2rem;">
+    By registering for and participating in any GFL match or activity, you confirm all of the following:
+  </p>
+
+  <div class="rule-block">✔ You have read and understood the full GFL Rule Book.</div>
+  <div class="rule-block">✔ You agree to abide by all rules, codes of conduct, and expectations set out in this document.</div>
+  <div class="rule-block">✔ You acknowledge the inherent physical risks of participating in football.</div>
+  <div class="rule-block">✔ You accept that the GFL, its organizers, and venue providers bear no liability for injury or loss.</div>
+  <div class="rule-block info">✔ You understand that any breach of the rules may result in disciplinary action, up to and including removal from the league.</div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

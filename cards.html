@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card System — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html" class="active">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">03</div>
+  <div>
+    <div class="page-label">Discipline</div>
+    <div class="page-title">Card System</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:2rem;">
+    The GFL adopts a partial standard of the FIFA card system. Referees are required to apply
+    the following consistently and fairly for both teams throughout every match.
+  </p>
+
+  <div class="cards-split">
+
+    <!-- YELLOW CARD -->
+    <div class="card-panel">
+      <div class="card-panel-header">
+        <div class="card-chip chip-yellow"></div>
+        <div class="card-panel-title">Yellow Card — Caution</div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        A yellow card is a formal warning issued for unsporting behaviour. Offences include but are not limited to:
+      </p>
+      <ul class="offense-list">
+        <li>Unsporting fouls or tackles</li>
+        <li>Dissent by word or action toward the referee</li>
+        <li>Persistent infringement of the rules</li>
+        <li>Deliberately delaying the restart of play</li>
+        <li>Entering or re-entering the field without the referee's permission</li>
+      </ul>
+      <div class="consequence yel">
+        <strong>Consequence:</strong> Two yellow cards in a single match result in an automatic red card.
+        Accumulation of yellow cards across multiple matches may lead to a suspension as determined
+        by the Disciplinary Team.
+      </div>
+    </div>
+
+    <!-- RED CARD -->
+    <div class="card-panel">
+      <div class="card-panel-header">
+        <div class="card-chip chip-red"></div>
+        <div class="card-panel-title">Red Card — Ejection</div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        A red card is shown for serious foul play or violent conduct. The player is ejected
+        from the match immediately. Offences include but are not limited to:
+      </p>
+      <ul class="offense-list">
+        <li>Serious foul play or violent conduct</li>
+        <li>Spitting at any person on or off the pitch</li>
+        <li>Denying an obvious goal-scoring opportunity via handball or foul</li>
+        <li>Using offensive, insulting, or abusive language and/or gestures</li>
+        <li>Receiving a second yellow card in the same match</li>
+      </ul>
+      <div class="consequence red">
+        <strong>Consequence:</strong> The player is immediately ejected. Their team must play with one
+        fewer player for the remainder of the match. The player is automatically suspended for the
+        next league match. Further disciplinary action may follow after a Disciplinary Team review.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">Cumulative Sanctions</p>
+
+  <div class="rule-block">
+    <strong>Yellow Card Accumulation:</strong> Multiple yellow cards received across different matches over the course of the season may trigger a suspension. The Disciplinary Team will determine the length and terms of any suspension.
+  </div>
+
+  <div class="rule-block warn">
+    <strong>Season Red Card Ban:</strong> If a player receives 2 red cards in a single season, they are banned from the league entirely. This ban is subject to review by the Disciplinary Team.
+  </div>
+
+  <div class="rule-block">
+    <strong>Disciplinary Review:</strong> All red card incidents are automatically reviewed by the independent Disciplinary Team. Additional sanctions — including extended bans or fines — may be applied after review of the match report and any available evidence.
+  </div>
+
+  <div class="rule-block info">
+    <strong>Appeals:</strong> Players or teams may submit a formal appeal against any disciplinary decision to the Disciplinary Team. Appeals must be submitted within a defined timeline as set by the Disciplinary Team. Their decision on appeal is final.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gameplay — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html" class="active">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">05</div>
+  <div>
+    <div class="page-label">On the Pitch</div>
+    <div class="page-title">Gameplay Rules</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- PRE-MATCH -->
+  <p class="sub-heading">Pre-Match Reminders</p>
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.2rem;">
+    Managers and Assistant Managers are responsible for communicating these reminders to
+    their players before every match.
+  </p>
+
+  <div class="rule-block">
+    ⏱ <strong>Early Arrival:</strong> All players must arrive at the venue at least <strong>20 minutes before kick-off</strong> to allow for registration, warm-up, and a team talk.
+  </div>
+  <div class="rule-block">
+    🤝 <strong>Greet With Respect:</strong> Greet the opposing team, match officials, and league organizers with a spirit of friendly competition — as we are all witnesses.
+  </div>
+  <div class="rule-block">
+    💍 <strong>No Jewellery:</strong> All jewellery must be fully removed before stepping onto the field. Jewellery can cause injury to yourself or others during play.
+  </div>
+
+  <div class="gold-line"></div>
+
+  <!-- SAFETY -->
+  <p class="sub-heading">Safety &amp; Valuables</p>
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.2rem;">
+    The safety of participants and their property is a shared responsibility. Please take
+    note of the following precautions.
+  </p>
+
+  <div class="rule-block">
+    📱 <strong>Secure Your Valuables:</strong> Mobile phones, watches, and wallets should be left with trusted fans or secured in a locked car and kept out of sight, as some venues are open to non-witnesses.
+  </div>
+  <div class="rule-block">
+    🚗 <strong>Vehicle Parking:</strong> All vehicles must be parked only in designated parking areas. Do not block emergency exits, access roads, or other vehicles. Ask the brother who booked the venue for parking guidance.
+  </div>
+  <div class="rule-block warn">
+    🔒 <strong>Property Disclaimer:</strong> The GFL, its organizers, and the venue are not responsible for any loss, theft, or damage to personal property — including vehicles and their contents. This is covered in the liability waiver.
+  </div>
+
+  <div class="gold-line"></div>
+
+  <!-- REFEREE -->
+  <p class="sub-heading">Referee Duties &amp; Reminders</p>
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.2rem;">
+    The referee's decision on the field of play is final. Referees are reminded of their
+    key duties to ensure consistency and safety.
+  </p>
+
+  <div class="rule-block">
+    🚨 <strong>Whistle for Safety:</strong> The referee holds ultimate authority to stop, suspend, or abandon a match for any safety concerns — including severe weather, poor lighting, or spectator behaviour.
+  </div>
+  <div class="rule-block">
+    🩺 <strong>Player Welfare:</strong> Be vigilant for signs of player injury. Stop play immediately for any suspected head injury. A player with an open bleeding wound must not remain on the field of play.
+  </div>
+  <div class="rule-block">
+    ⚖️ <strong>Consistency:</strong> Apply the rules and the card system consistently and fairly for both teams throughout the entire match.
+  </div>
+  <div class="rule-block">
+    🗣️ <strong>Game Management:</strong> Communicate clearly with players. Explain decisions when appropriate to help de-escalate tension and maintain a positive atmosphere.
+  </div>
+  <div class="rule-block info">
+    📝 <strong>Post-Match Report:</strong> Submit a brief, accurate match report to the league organizers immediately after the game. The report must note any incidents, all goalscorers, and any cards issued.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

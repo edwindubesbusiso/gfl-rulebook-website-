@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GFL — JW's Golden Football League</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">Official Document · 2025 Season</div>
+  <h1 class="hero-title">
+    JW's Golden
+    <span class="gold-word">Football</span>
+    League
+  </h1>
+  <div class="hero-divider"></div>
+  <p class="hero-sub">The official rule book governing all matches, conduct, and administration of the GFL. Select a section below to get started.</p>
+
+  <div class="hero-nav-grid">
+    <a class="hero-nav-item" href="mission.html">
+      <span class="hero-nav-icon">🏅</span>
+      <span class="hero-nav-label">Mission</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="eligibility.html">
+      <span class="hero-nav-icon">✅</span>
+      <span class="hero-nav-label">Eligibility</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="points.html">
+      <span class="hero-nav-icon">🏆</span>
+      <span class="hero-nav-label">Points</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="cards.html">
+      <span class="hero-nav-icon">🟨</span>
+      <span class="hero-nav-label">Cards</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="bookings.html">
+      <span class="hero-nav-icon">📋</span>
+      <span class="hero-nav-label">Bookings</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="gameplay.html">
+      <span class="hero-nav-icon">⚽</span>
+      <span class="hero-nav-label">Gameplay</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="roles.html">
+      <span class="hero-nav-icon">👥</span>
+      <span class="hero-nav-label">Roles</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+    <a class="hero-nav-item" href="disclaimer.html">
+      <span class="hero-nav-icon">⚠️</span>
+      <span class="hero-nav-label">Disclaimer</span>
+      <span class="hero-nav-arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

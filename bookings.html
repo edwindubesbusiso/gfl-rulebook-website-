@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bookings — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html" class="active">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">04</div>
+  <div>
+    <div class="page-label">Administration</div>
+    <div class="page-title">Venue Bookings</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p style="font-size:0.9rem;color:var(--muted);max-width:640px;margin-bottom:2rem;">
+    To ensure clarity and trust among all teams, the following rules apply to the booking of
+    match venues. Transparency here allows all teams to plan their travel and schedules
+    with confidence.
+  </p>
+
+  <p class="sub-heading">Booking Rules</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">📸</div>
+      <div class="card-title">Proof of Booking</div>
+      <div class="card-text">
+        The team responsible for booking a venue must provide proof of the booking to all teams
+        in their allocated group. Acceptable formats: screenshot, email confirmation, or official
+        venue receipt.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📍</div>
+      <div class="card-title">Required Information</div>
+      <div class="card-text">
+        The proof of booking must clearly display the following: Venue Name &amp; Address,
+        Date of the Match, Start and End Time, and Total Amount Paid (if shown on receipt).
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">✍️</div>
+      <div class="card-title">Manager Responsibility</div>
+      <div class="card-text">
+        If the venue does not provide receipts or confirmations with all required details,
+        the booking manager must share a simple signed document confirming the arrangement.
+      </div>
+    </div>
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">Manager Signed Document</p>
+
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem;">
+    When a venue receipt is unavailable or incomplete, the signed document from the booking
+    manager must confirm all of the following:
+  </p>
+
+  <div class="rule-block">📍 <strong>Venue:</strong> Full name and address of the facility being booked.</div>
+  <div class="rule-block">📅 <strong>Date:</strong> The exact date on which the match is scheduled to take place.</div>
+  <div class="rule-block">⏰ <strong>Time:</strong> The confirmed start and end time of the booking.</div>
+  <div class="rule-block">💰 <strong>Payment:</strong> A statement confirming that the necessary fees have been arranged and are covered.</div>
+  <div class="rule-block">✍️ <strong>Responsibility:</strong> The manager takes full personal responsibility for the accuracy of all the above information.</div>
+
+  <div class="rule-block info" style="margin-top:1.5rem;">
+    <strong>Purpose:</strong> This process promotes transparency and allows all teams to plan their travel and schedules with confidence, fostering trust and cooperation within the brotherhood.
+  </div>
+
+  <div class="rule-block">
+    <strong>Travel Guidance:</strong> For parking and directions, it is best to ask the brother who booked the venue directly. All vehicles must be parked in designated areas only — do not block emergency exits or access roads.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

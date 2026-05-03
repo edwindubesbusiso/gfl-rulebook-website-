@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eligibility — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html" class="active">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">01</div>
+  <div>
+    <div class="page-label">Registration</div>
+    <div class="page-title">Requirements for Applicants</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p class="sub-heading">Player Requirements</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-title">Community Affiliation</div>
+      <div class="card-text">
+        All players must have a verifiable connection to the community — known to the organizers
+        or formally invited by a current member in good standing.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <div class="card-title">Code of Conduct</div>
+      <div class="card-text">
+        Applicants must read and acknowledge the GFL Rule Book and agree to uphold the league's
+        values of respect, fair play, and integrity before playing.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">📢</div>
+      <div class="card-title">Bible Study Players</div>
+      <div class="card-text">
+        If affiliated players are Bible studies, organizers must be made aware of the number of
+        non-publishers and give their go-ahead before they play.
+      </div>
+    </div>
+  </div>
+
+  <div class="rule-block">
+    <strong>Manager Duty:</strong> It is the responsibility of a team's Manager to inform the opposing team's Manager of the number and standing of any non-publisher players before the match takes place.
+  </div>
+
+  <div class="rule-block">
+    <strong>Team Rights:</strong> Teams hold the right to reject playing a match if they have not been properly made aware of players who are not Jehovah's Witnesses.
+  </div>
+
+  <div class="rule-block warn">
+    <strong>ZERO TOLERANCE — Cornerstone Rule:</strong> This affiliation rule is a cornerstone of the league. Any team found to be dishonest on this account will be eliminated from the league with immediate effect. No questions asked.
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">Age Limit</p>
+
+  <div class="age-grid">
+    <div class="age-cell">
+      <div class="age-num">16+</div>
+      <div class="age-label">Standard Entry</div>
+      <div class="age-desc">
+        All players must be at least 16 years of age to participate in the GFL.
+        Proof of age may be requested at any time by the organizers.
+      </div>
+    </div>
+    <div class="age-cell">
+      <div class="age-num">&lt;16</div>
+      <div class="age-label">Junior Players</div>
+      <div class="age-desc">
+        Players aged below 16 must have a signed parental or guardian consent form,
+        issued and filed with the league organizers, before they are permitted to play.
+      </div>
+    </div>
+  </div>
+
+  <div class="rule-block" style="margin-top:1.5rem;">
+    <strong>Note:</strong> The consent form for junior players is issued by the league organizers and must be on file prior to any match participation, in case of an incident during play.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

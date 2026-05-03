@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roles — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html" class="active">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">06</div>
+  <div>
+    <div class="page-label">Community</div>
+    <div class="page-title">Roles &amp; Responsibilities</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p style="font-size:0.9rem;color:var(--muted);max-width:640px;margin-bottom:2.5rem;">
+    The GFL is run by a community of dedicated individuals. Each role carries specific
+    responsibilities that together ensure the league operates smoothly, fairly, and in the
+    spirit of fellowship.
+  </p>
+
+  <div class="role-grid">
+
+    <div class="role-card">
+      <div class="role-emoji">👨‍💼</div>
+      <div class="role-title">Manager</div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        The Manager is the leader of the team and a role model for players and spectators alike.
+      </p>
+      <ul class="role-duties">
+        <li>Register all players and organize team sheets for every match</li>
+        <li>Ensure the team is ready to play and informed of all updates</li>
+        <li>Uphold the GFL Code of Conduct at all times on and off the pitch</li>
+        <li>Manage player behaviour and substitutions to maintain the spirit of the game</li>
+        <li>Act as the primary point of contact between the team and league organizers</li>
+        <li>Inform the opposing Manager of the number and standing of any non-publisher players</li>
+        <li>Stay alert to any changes and information shared in the group</li>
+        <li>Help improve the JW League wherever possible</li>
+      </ul>
+    </div>
+
+    <div class="role-card">
+      <div class="role-emoji">🗂️</div>
+      <div class="role-title">Organisers</div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        The league organizers are responsible for the overall administration and smooth
+        running of the GFL.
+      </p>
+      <ul class="role-duties">
+        <li>Create the season fixture lists</li>
+        <li>Address and resolve disputes that may arise between teams</li>
+        <li>Disseminate all league information, updates, and reminders to all teams</li>
+        <li>Ensure the league rules are applied fairly across all teams</li>
+        <li>Manage registration and all administrative tasks required for the league to function</li>
+      </ul>
+    </div>
+
+    <div class="role-card">
+      <div class="role-emoji">🛠️</div>
+      <div class="role-title">Support Team</div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        The support team consists of brothers who work behind the scenes to ensure the
+        league runs smoothly.
+      </p>
+      <ul class="role-duties">
+        <li>Manage the league website and communication channels</li>
+        <li>Handle the Top 8 rankings and related content</li>
+        <li>Plan for future expansion and improvement of the league</li>
+        <li>Provide back-end operational support to the organizers</li>
+      </ul>
+    </div>
+
+    <div class="role-card">
+      <div class="role-emoji">⚖️</div>
+      <div class="role-title">Disciplinary Team</div>
+      <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem;">
+        The disciplinary team is an independent body that reviews incidents and ensures
+        accountability across the entire league.
+      </p>
+      <ul class="role-duties">
+        <li>Review all red card incidents and serious reports from match reports</li>
+        <li>Impose appropriate sanctions such as match bans or fines</li>
+        <li>Hear formal appeals from players or teams regarding disciplinary decisions</li>
+        <li>Ensure disciplinary measures are applied fairly and consistently for all teams</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="rule-block info" style="margin-top:2rem;">
+    <strong>Appeals Process:</strong> The Disciplinary Team's appeals process is subject to a defined timeline. Players and teams wishing to appeal a decision must do so within the set period. The Disciplinary Team's ruling on appeal is final.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

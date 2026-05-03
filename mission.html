@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html" class="active">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">00</div>
+  <div>
+    <div class="page-label">Foundation</div>
+    <div class="page-title">Mission Statement</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p class="mission-quote">
+    The GFL aims to provide a platform for healthy recreation, sportsmanship, and community
+    fellowship through the beautiful game of football, ensuring all activities are conducted
+    with respect, safety, and fairness.
+  </p>
+
+  <div class="gold-line"></div>
+
+  <p class="sub-heading">Core Values</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">⚽</div>
+      <div class="card-title">Healthy Recreation</div>
+      <div class="card-text">The GFL is a platform for physical activity and the enjoyment of football in a safe, welcoming environment for all participants.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <div class="card-title">Sportsmanship</div>
+      <div class="card-text">Every player, manager, and official is expected to compete with dignity — win or lose — embodying the highest standards of fair play.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏘️</div>
+      <div class="card-title">Community Fellowship</div>
+      <div class="card-text">Beyond the pitch, the GFL is about strengthening bonds within our community and enjoying the beautiful game together as brothers.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚖️</div>
+      <div class="card-title">Respect &amp; Fairness</div>
+      <div class="card-text">All activities must be conducted with mutual respect toward opponents, officials, and organizers. The rules apply equally to everyone.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛡️</div>
+      <div class="card-title">Safety First</div>
+      <div class="card-text">The well-being of every participant is the league's top priority. All precautions are taken to ensure matches are conducted safely.</div>
+    </div>
+    <div class="card">
+      <div class="card-icon">✨</div>
+      <div class="card-title">Integrity</div>
+      <div class="card-text">Honesty and transparency underpin everything — from player registration to venue bookings. The GFL's trust is built on integrity.</div>
+    </div>
+  </div>
+
+  <div class="rule-block info">
+    By participating in the GFL, every player, manager, and official agrees to uphold these values
+    in every match, every interaction, and every decision made on and off the pitch.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

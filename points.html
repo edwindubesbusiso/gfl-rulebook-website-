@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Points System — GFL Rule Book</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">GFL</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-dropdown" id="nav-dropdown">
+    <ul class="nav-links">
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="eligibility.html">Eligibility</a></li>
+      <li><a href="points.html" class="active">Points</a></li>
+      <li><a href="cards.html">Cards</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="gameplay.html">Gameplay</a></li>
+      <li><a href="roles.html">Roles</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-num">02</div>
+  <div>
+    <div class="page-label">Gaming Structure</div>
+    <div class="page-title">Points &amp; Standings</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <p class="sub-heading">Allocation of Points</p>
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.5rem;">
+    The league table is determined using the standard three-point system to encourage attacking
+    and entertaining football.
+  </p>
+
+  <div class="points-table">
+    <div class="points-row pts-win">
+      <span class="points-label">🏆&nbsp; Win</span>
+      <span class="points-badge">3 PTS</span>
+    </div>
+    <div class="points-row pts-draw">
+      <span class="points-label">🤝&nbsp; Draw</span>
+      <span class="points-badge">1 PT</span>
+    </div>
+    <div class="points-row pts-loss">
+      <span class="points-label">❌&nbsp; Loss</span>
+      <span class="points-badge">0 PTS</span>
+    </div>
+  </div>
+
+  <div class="gold-line"></div>
+  <p class="sub-heading">Tie-Breaker Order</p>
+  <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.5rem;">
+    If two or more teams are level on points at the end of the season, the following criteria
+    are applied in this exact order to determine final positions:
+  </p>
+
+  <ul class="tie-list">
+    <li>
+      <span class="tie-num">1</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Goal Difference</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">Total Goals Scored minus Total Goals Conceded across all league matches.</span>
+      </div>
+    </li>
+    <li>
+      <span class="tie-num">2</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Goals Scored</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">Total number of goals scored throughout the season. More goals scored ranks higher.</span>
+      </div>
+    </li>
+    <li>
+      <span class="tie-num">3</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Head-to-Head Record</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">The result(s) of the match(es) played directly between the tied teams during the season.</span>
+      </div>
+    </li>
+    <li>
+      <span class="tie-num">4</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Fewest Red Cards</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">The team with the lowest number of red cards received across the season ranks higher.</span>
+      </div>
+    </li>
+    <li>
+      <span class="tie-num">5</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Fewest Yellow Cards</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">The team with the lowest number of yellow cards received across the season ranks higher.</span>
+      </div>
+    </li>
+    <li>
+      <span class="tie-num">6</span>
+      <div>
+        <strong style="color:var(--text);font-size:0.9rem;">Coin Toss</strong>
+        <br/>
+        <span style="font-size:0.82rem;color:var(--muted);">As a last resort, a coin toss conducted by the League Organizer will determine the final position.</span>
+      </div>
+    </li>
+  </ul>
+
+  <div class="rule-block info" style="margin-top:1.5rem;">
+    <strong>Note:</strong> All tie-breaker criteria are applied strictly in the order listed above. Only if criterion 1 cannot separate teams will criterion 2 be applied, and so on.
+  </div>
+
+</div>
+
+<footer>
+  <span>GFL</span> — JW's Golden Football League &nbsp;·&nbsp; Official Rule Book &nbsp;·&nbsp; All rights reserved
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const drop = document.getElementById('nav-dropdown');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    drop.classList.toggle('open');
+  });
+  drop.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      btn.classList.remove('open');
+      drop.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
